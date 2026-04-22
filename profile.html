@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <link rel="stylesheet" href="../Css Files/learner_dashboard.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script defer src="../Javascript Files/learner_dashboard.js"></script>
+</head>
+<body>
+
+  <div class="dashboard">
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h2>LearnSpace</h2>
+    </div>
+    <div class="nav-menu">
+      <div class="nav-item" id="dashboard">
+        <span class="material-icons">dashboard</span>
+        <span>Dashboard</span>
+      </div>
+      <div class="nav-item" id="courses">
+        <span class="material-icons">menu_book</span>
+        <span>Courses</span>
+      </div>
+      <div class="nav-item" id="progress">
+        <span class="material-icons">trending_up</span>
+        <span>Progress</span>
+      </div>
+      <div class="nav-item" id="assignments">
+        <span class="material-icons">assignment</span>
+        <span>Assignments</span>
+      </div>
+      <div class="nav-item active" id="profile">
+        <span class="material-icons">settings</span>
+        <span>Profile</span>
+      </div>
+    </div>
+    <div class="sidebar-footer">
+      <div class="curpo" style="cursor: pointer;">
+        <div class="avatar-sm">JD</div>
+        <div class="user-info">
+          <b>John Doe</b>
+          <p>John@learnspace.ng</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="top-bar">
+      <div class="greeting">
+        <h3>Good morning, John! 👋</h3>
+        <p>You have <strong>2 pending assignments</strong> this week. Keep growing!</p>
+      </div>
+      <div class="badge-date">
+        <span class="material-icons" style="font-size: 18px;">calendar_today</span>
+        <span>April 21, 2026</span>
+      </div>
+    </div>
+
+    <div class="profile-wrapper">
+      <div class="profile-header">
+        <div class="profile-title">
+          <h1>John Doe</h1>
+          <p>john.doe@learnspace.com · Member since March 2025 
+            <span class="edit-badge" id="editProfileBtn" style="cursor: pointer;">✎ Edit profile</span>
+          </p>
+          <p style="font-size: 0.85rem; margin-top: 8px;">
+            <span class="material-icons" style="font-size: 1rem; vertical-align: middle;">location_on</span> Lagos, Nigeria
+            · <span class="material-icons" style="font-size: 1rem; vertical-align: middle;">school</span> 4 active courses
+          </p>
+        </div>
+      </div>
+
+      <div class="profile-grid">
+        <div class="info-card">
+          <div class="card-title">
+            <span class="material-icons">person</span>
+            <span>Personal information</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Full name</span>
+            <span class="info-value">John Doe</span>
+            <span class="edit-link" data-field="name">edit</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Email address</span>
+            <span class="info-value">john.doe@learnspace.com</span>
+            <span class="edit-link" data-field="email">edit</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Phone number</span>
+            <span class="info-value">+234 812 345 6789</span>
+            <span class="edit-link" data-field="phone">edit</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Date of birth</span>
+            <span class="info-value">May 15, 1995</span>
+            <span class="edit-link" data-field="dob">edit</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Country/Region</span>
+            <span class="info-value">Nigeria</span>
+            <span class="edit-link" data-field="country">edit</span>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="card-title">
+            <span class="material-icons">tune</span>
+            <span>Account & preferences</span>
+          </div>
+          <div class="pref-item">
+            <span>Email notifications</span>
+            <div class="toggle-switch active" id="notifToggle"></div>
+          </div>
+          <div class="pref-item">
+            <span>Weekly progress report</span>
+            <div class="toggle-switch active" id="reportToggle"></div>
+          </div>
+          <div class="pref-item">
+            <span>Dark mode (beta)</span>
+            <div class="toggle-switch" id="darkToggle"></div>
+          </div>
+          <div class="pref-item">
+            <span>Language</span>
+            <span class="info-value">English (US) <span class="edit-link" style="margin-left: 8px;">change</span></span>
+          </div>
+          <div class="pref-item">
+            <span>Learning goal reminder</span>
+            <div class="toggle-switch active" id="goalToggle"></div>
+          </div>
+          <button class="btn-save" id="savePrefsBtn">Save preferences</button>
+        </div>
+      </div>
+
+      <div class="profile-grid">
+        <div class="info-card">
+          <div class="card-title">
+            <span class="material-icons">insights</span>
+            <span>Learning snapshot</span>
+          </div>
+          <div class="stats-mini">
+            <div class="stat-mini-item">
+              <div class="stat-number">47%</div>
+              <div style="font-size: 0.7rem;">Overall progress</div>
+            </div>
+            <div class="stat-mini-item">
+              <div class="stat-number">14</div>
+              <div style="font-size: 0.7rem;">Modules done</div>
+            </div>
+            <div class="stat-mini-item">
+              <div class="stat-number">12d</div>
+              <div style="font-size: 0.7rem;">Current streak</div>
+            </div>
+          </div>
+          <div style="margin-top: 18px;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.75rem; margin-bottom: 6px;">
+              <span>Weekly goal: 5 modules</span>
+              <span><strong>3/5</strong></span>
+            </div>
+            <div class="progress-bar-bg" style="background:#eef2f8; border-radius:40px; height:8px;">
+              <div class="progress-fill" style="width:60%; background: var(--success-green); height:100%; border-radius:40px;"></div>
+            </div>
+          </div>
+          <div style="margin-top: 20px;">
+            <p style="font-size: 0.75rem; color: var(--primary-indigo);"><span class="material-icons" style="font-size: 0.9rem;">stars</span> Next badge: "JavaScript Master" – 2 more tasks</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="card-title">
+            <span class="material-icons">history</span>
+            <span>Recent activity</span>
+          </div>
+          <div class="activity-list">
+            <div class="activity-item">
+              <div class="activity-icon"><span class="material-icons">play_circle</span></div>
+              <div class="activity-text">
+                <p>Completed "Design tokens" module</p>
+                <div class="activity-time">Yesterday, 4:30 PM</div>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon"><span class="material-icons">assignment_turned_in</span></div>
+              <div class="activity-text">
+                <p>Submitted React Hooks assignment</p>
+                <div class="activity-time">Apr 19, 2026</div>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon"><span class="material-icons">groups</span></div>
+              <div class="activity-text">
+                <p>Joined study group: Full-Stack JS</p>
+                <div class="activity-time">Apr 18, 2026</div>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon"><span class="material-icons">emoji_events</span></div>
+              <div class="activity-text">
+                <p>Earned "Quick Learner" badge</p>
+                <div class="activity-time">Apr 17, 2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card" style="margin-top: 8px; border: 1px solid rgba(249, 162, 108, 0.2);">
+        <div class="card-title" style="border-left-color: #e05a5a;">
+          <span class="material-icons" style="color: #e05a5a;">warning</span>
+          <span>Account management</span>
+        </div>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+          <div>
+            <p style="font-size: 0.85rem;">Change password or manage security settings</p>
+          </div>
+          <button id="changePwdBtn" style="background: transparent; border: 1px solid var(--warm-gray); padding: 8px 24px; border-radius: 40px; font-weight: 500; cursor: pointer;">Change password</button>
+          <button id="deleteAccountBtn" style="background: transparent; border: 1px solid #e05a5a; color: #e05a5a; padding: 8px 24px; border-radius: 40px; font-weight: 500; cursor: pointer;">Delete account</button>
+        </div>
+      </div>
+    </div>
+
+<footer class="dashboard-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h3>LearnSpace</h3>
+          <p>Where curiosity meets opportunity — learn beyond borders.</p>
+          <div style="margin-top: 12px;"><span class="material-icons" style="font-size: 16px;">email</span> hello@learnspace.com</div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col"><h4>Explore</h4><a href="#">Features</a><a href="#">Courses</a><a href="#">About us</a><a href="#">Careers</a></div>
+          <div class="footer-col"><h4>Resources</h4><a href="#">Help center</a><a href="#">Community</a><a href="#">Blog</a><a href="#">For instructors</a></div>
+          <div class="footer-col"><h4>Legal</h4><a href="#">Privacy policy</a><a href="#">Terms of use</a><a href="#">Cookie settings</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2025 LearnSpace — Empowering the new generation. All rights reserved.</div>
+    </footer>
+  </div>
+</div>
+  <script defer src="../Javascript Files/index.js"></script>
+
+</body>
+</html>

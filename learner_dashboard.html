@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Dashboard</title>
+  <link rel="stylesheet" href="../Css Files/learner_dashboard.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script defer src="../Javascript Files/learner_dashboard.js"></script>
+</head>
+<body>
+
+  <a href="../HTML Files/learner_dashboard.html"></a>
+
+  <div class="dashboard">
+  <!-- SIDEBAR (navigation) -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>LearnSpace</h2>
+    </div>
+    <div class="nav-menu">
+      <div class="nav-item active" id="dashboard">
+        <span class="material-icons">dashboard</span>
+        <span>Dashboard</span>
+      </div>
+      <div class="nav-item" id="courses">
+        <span class="material-icons">menu_book</span>
+        <span>Courses</span>
+      </div>
+      <div class="nav-item" id="progress">
+        <span class="material-icons">trending_up</span>
+        <span>Progress</span>
+      </div>
+      <div class="nav-item" id="assignments">
+        <span class="material-icons">assignment</span>
+        <span>Assignments</span>
+      </div>
+      <div class="nav-item" id="profile">
+        <span class="material-icons">settings</span>
+        <span>Profile</span>
+        <!-- change Profile icon later -->
+      </div>
+    </div>
+    <div class="sidebar-footer">
+      <div class="curpo" style="cursor: pointer;">
+        <div class="avatar-sm">JD</div>
+        <div class="user-info">
+          <b>John Doe</b>
+          <p>John@learnspace.ng</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN DASHBOARD CONTENT -->
+  <main class="main-content">
+    <div class="top-bar">
+      <div class="greeting">
+        <h3>Good morning, John! 👋</h3>
+        <p>You have <strong>2 pending assignments</strong> this week. Keep growing!</p>
+      </div>
+      <div class="badge-date">
+        <span class="material-icons" style="font-size: 18px;">calendar_today</span>
+        <span>April 21, 2026</span>
+      </div>
+    </div>
+
+    <div class="dashboard-container">
+      <!-- Stats cards -->
+      <div class="stats-grid">
+        <div class="stat-card"><div class="stat-icon"><span class="material-icons">school</span></div><div class="stat-value">5</div><div class="stat-label">Enrolled Courses</div></div>
+        <div class="stat-card"><div class="stat-icon"><span class="material-icons">task_alt</span></div><div class="stat-value">34</div><div class="stat-label">Lessons Completed</div></div>
+        <div class="stat-card"><div class="stat-icon"><span class="material-icons">pending_actions</span></div><div class="stat-value">2</div><div class="stat-label">Pending Assignments</div></div>
+        <div class="stat-card"><div class="stat-icon"><span class="material-icons">insights</span></div><div class="stat-value">68%</div><div class="stat-label">Overall Progress</div></div>
+      </div>
+
+      <!-- Two column layout: left (courses + activity) / right (assignment & lesson) -->
+      <div class="two-columns">
+        <!-- LEFT COLUMN -->
+        <div>
+          <!-- Enrolled Courses Section -->
+          <div class="courses-section">
+            <div class="section-title">
+              <span class="material-icons" style="color: #4ece6b;">menu_book</span> My Courses
+            </div>
+            <div class="course-item">
+              <div class="course-header"><span class="course-name">Software Design & Architecture</span><span class="course-percent">75%</span></div>
+              <div class="progress-bar-bg"><div class="progress-fill" style="width: 75%;"></div></div>
+              <div class="course-meta"><span>📘 6 of 8 modules</span><span>⚡ Last active 2h ago</span></div>
+            </div>
+            <div class="course-item">
+              <div class="course-header"><span class="course-name">AI & Machine Learning – Introduction to AI</span><span class="course-percent">55%</span></div>
+              <div class="progress-bar-bg"><div class="progress-fill" style="width: 55%;"></div></div>
+              <div class="course-meta"><span>🔬 5 of 9 modules</span><span>📅 Last active yesterday</span></div>
+            </div>
+            <div class="course-item">
+              <div class="course-header"><span class="course-name">Javascript for beginners – Guide to Foundational Javascript knowledge</span><span class="course-percent">40%</span></div>
+              <div class="progress-bar-bg"><div class="progress-fill" style="width: 40%;"></div></div>
+              <div class="course-meta"><span>🤖 2 of 5 modules</span><span>⏳ Last active 3d ago</span></div>
+            </div>
+            <div class="course-item">
+              <div class="course-header"><span class="course-name">Full-Stack MERN Bootcamp</span><span class="course-percent">82%</span></div>
+              <div class="progress-bar-bg"><div class="progress-fill" style="width: 82%;"></div></div>
+              <div class="course-meta"><span>⚛️ 12 modules completed</span><span>🔥 On fire</span></div>
+            </div>
+          </div>
+
+          <!-- Recent Activity -->
+          <div class="activity-section">
+            <div class="section-title"><span class="material-icons" style="color: #4ece6b;">history</span> Recent Activity</div>
+            <div class="activity-item">
+              <div class="activity-icon"><span class="material-icons">check_circle</span></div>
+              <div class="activity-details">
+                <div class="activity-title">Lesson Completed: GoF Design Patterns</div>
+                <div class="activity-time"><span>CEN 505 - 2 hours ago</span><span class="status-badge done">Done</span></div>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon"><span class="material-icons">assignment_late</span></div>
+              <div class="activity-details">
+                <div class="activity-title">Assignment Due: Digital Watermarking – Phase 2</div>
+                <div class="activity-time"><span>CEN 501 - Due in 2 days</span><span class="status-badge pending">Pending</span></div>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon"><span class="material-icons">quiz</span></div>
+              <div class="activity-details">
+                <div class="activity-title">Module Quiz: SOLID Principles</div>
+                <div class="activity-time"><span>Scored 92% · 1 day ago</span><span class="status-badge done">Completed</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="assignment-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <h3 style="font-weight: 700;">📄 Digital Watermarking — Phase 2</h3>
+              <span class="due-badge">Due: Apr 14, 2026</span>
+            </div>
+            <p style="font-size: 0.85rem; color: #5a6b87; margin-bottom: 12px;">Individual Submission · Draft ready</p>
+            <div class="file-drop-area" id="dropZone">
+              <span class="material-icons" style="color: #3D52D5;">cloud_upload</span>
+              <p>Drop your file here or <label class="file-label" for="fileUpload">browse to upload</label></p>
+              <input type="file" id="fileUpload" style="display: none;" accept=".pdf,.docx,.zip">
+              <p style="font-size: 0.7rem; margin-top: 8px;">PDF, DOCX, ZIP · Max 10MB</p>
+              <div id="fileFeedback" style="font-size: 0.75rem; margin-top: 6px; color: #2e7d32;"></div>
+            </div>
+            <label style="font-weight: 600; margin-top: 8px; display: block;">OR WRITE YOUR RESPONSE BELOW</label>
+            <textarea rows="3" placeholder="The three main watermarking techniques explored in this submission are LSB (Least Significant Bit) embedding in the spatial domain, DCT in the frequency domain, and DWT as a hybrid approach...">The three main watermarking techniques explored in this submission are LSB (Least Significant Bit) embedding in the spatial domain, DCT (Discrete Cosine Transform) in the frequency domain, and DWT (Discrete Wavelet Transform) as a hybrid approach.</textarea>
+            <div class="btn-group">
+              <button class="btn-outline" id="saveDraftBtn">📌 Save as Draft</button>
+              <button class="btn-primary" id="submitAssignmentBtn">✨ Submit Assignment</button>
+            </div>
+          </div>
+
+          <div class="lesson-card">
+            <div style="display: flex; justify-content: space-between;">
+              <h3 style="font-weight: 700;">📖 GoF Design Patterns</h3>
+              <span class="material-icons" style="color: #4ece6b;">menu_book</span>
+            </div>
+            <p style="font-size: 0.8rem; color: #6c7e9e; margin: 8px 0 10px;">Module 2 · Gang of Four (GoF) patterns</p>
+            <p style="font-size: 0.9rem; line-height: 1.5;">The Gang of Four (GoF) design patterns are 23 classic software design solutions — Creational, Structural, and Behavioural. They improve code reusability, scalability, and maintainability.</p>
+            <div class="lesson-progress-mini">
+              <span>📘 Lesson progress</span>
+              <span><strong>60%</strong> explored</span>
+            </div>
+            <div class="progress-bar-bg"><div class="progress-fill" style="width: 60%;"></div></div>
+            <div class="lesson-actions">
+              <button class="btn-outline" id="prevLessonBtn">◀ Previous</button>
+              <button class="btn-primary" id="markCompleteBtn">✓ Mark as Complete</button>
+              <button class="btn-outline" id="nextLessonBtn">Next ▶</button>
+            </div>
+            <div id="lessonFeedback" style="font-size: 0.7rem; margin-top: 10px; color: #3f6b3c; text-align: center;"></div>
+          </div>
+
+          <!-- Extra quick progress breakdown (optional from Screen06) -->
+          <div style="background: white; border-radius: 28px; padding: 20px; box-shadow: var(--card-shadow);">
+            <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 14px;"><span class="material-icons" style="color: #4ece6b;">insights</span><span style="font-weight: 700;">Course-by-Course Breakdown</span></div>
+            <div><small>SDA: 79% · AI&ML: 55% · Javascript: 40% · MERN: 82%</small></div>
+            <div class="progress-bar-bg mt-2" style="margin-top: 8px;"><div class="progress-fill" style="width: 68%; background: #F9A26C;"></div></div>
+            <p style="font-size: 0.7rem; margin-top: 8px;">✅ 34 of 50 lessons completed · Keep momentum!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="dashboard-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h3>LearnSpace</h3>
+          <p>Where curiosity meets opportunity — learn beyond borders.</p>
+          <div style="margin-top: 12px;"><span class="material-icons" style="font-size: 16px;">email</span> hello@learnspace.com</div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col"><h4>Explore</h4><a href="#">Features</a><a href="#">Courses</a><a href="#">About us</a><a href="#">Careers</a></div>
+          <div class="footer-col"><h4>Resources</h4><a href="#">Help center</a><a href="#">Community</a><a href="#">Blog</a><a href="#">For instructors</a></div>
+          <div class="footer-col"><h4>Legal</h4><a href="#">Privacy policy</a><a href="#">Terms of use</a><a href="#">Cookie settings</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2025 LearnSpace — Empowering the new generation. All rights reserved.</div>
+    </footer>
+  </main>
+</div>
+
+  <script defer src="../Javascript Files/learner_dashboard.js"></script>
+</body>
+</html>
+

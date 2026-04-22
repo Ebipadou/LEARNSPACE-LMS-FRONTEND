@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Courses</title>
+  <link rel="stylesheet" href="../Css Files/learner_dashboard.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script defer src="../Javascript Files/learner_dashboard.js"></script>
+</head>
+<body>
+<body>
+<div class="dashboard">
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h2>LearnSpace</h2>
+    </div>
+    <div class="nav-menu">
+      <div class="nav-item" id="dashboard">
+        <span class="material-icons">dashboard</span>
+        <span>Dashboard</span>
+      </div>
+      <div class="nav-item active" id="courses">
+        <span class="material-icons">menu_book</span>
+        <span>Courses</span>
+      </div>
+      <div class="nav-item" id="progress">
+        <span class="material-icons">trending_up</span>
+        <span>Progress</span>
+      </div>
+      <div class="nav-item" id="assignments">
+        <span class="material-icons">assignment</span>
+        <span>Assignments</span>
+      </div>
+      <div class="nav-item" id="profile">
+        <span class="material-icons">settings</span>
+        <span>Profile</span>
+      </div>
+    </div>
+    <div class="sidebar-footer">
+      <div class="curpo" style="cursor: pointer;">
+        <div class="avatar-sm">JD</div>
+        <div class="user-info">
+          <b>John Doe</b>
+          <p>John@learnspace.ng</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT (Courses + Modules) -->
+  <div class="main-content">
+    <div class="top-bar">
+      <div class="greeting">
+        <h3>Good morning, John! 👋</h3>
+        <p>You have <strong>2 pending assignments</strong> this week. Keep growing!</p>
+      </div>
+      <div class="badge-date">
+        <span class="material-icons" style="font-size: 18px;">calendar_today</span>
+        <span>April 21, 2026</span>
+      </div>
+    </div>
+
+    <!-- ========== COURSES + MODULES CONTENT ========== -->
+    <div class="courses-modules-wrapper">
+      <!-- Section header -->
+      <div class="section-header">
+        <h2>📘 My Courses & Modules</h2>
+        <p>Stay on track, master new skills — every lesson brings you closer to your goals.</p>
+      </div>
+
+      <!-- Courses grid (4 dynamic cards) -->
+      <div class="courses-grid">
+        <!-- Course 1 -->
+        <div class="course-card">
+          <div class="card-thumb" style="background: linear-gradient(145deg, #2b3b8c, #152050);">
+            <span class="material-icons">design_services</span>
+          </div>
+          <div class="course-info">
+            <div class="course-title">
+              UI/UX Design Systems
+              <span class="badge-modules">8 mod</span>
+            </div>
+            <div class="course-desc">Master design tokens, component libraries, and Figma prototypes.</div>
+            <div class="progress-section">
+              <div class="progress-label"><span>Progress</span><span>45%</span></div>
+              <div class="progress-bar-bg"><div class="progress-fill" style="width:45%"></div></div>
+            </div>
+            <div class="course-footer">
+              <div class="modules-count"><span class="material-icons">library_books</span> 3/8 completed</div>
+              <button class="resume-btn">Resume →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-card">
+          <div class="card-thumb" style="background: linear-gradient(145deg, #3D52D5, #1f2e7a);">
+            <span class="material-icons">code</span>
+          </div>
+          <div class="course-info">
+            <div class="course-title">
+              Full-Stack JavaScript
+              <span class="badge-modules">12 mod</span>
+            </div>
+            <div class="course-desc">React, Node.js, databases — build real-world applications.</div>
+            <div class="progress-section">
+              <div class="progress-label"><span>Progress</span><span>22%</span></div>
+              <div class="progress-bar-bg"><div class="progress-fill" style="width:22%"></div></div>
+            </div>
+            <div class="course-footer">
+              <div class="modules-count"><span class="material-icons">library_books</span> 3/12 completed</div>
+              <button class="resume-btn">Resume →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="course-card">
+          <div class="card-thumb" style="background: linear-gradient(145deg, #F9A26C, #c76f3a);">
+            <span class="material-icons">analytics</span>
+          </div>
+          <div class="course-info">
+            <div class="course-title">
+              Data Science with Python
+              <span class="badge-modules">10 mod</span>
+            </div>
+            <div class="course-desc">Pandas, NumPy, ML fundamentals & data visualization.</div>
+            <div class="progress-section">
+              <div class="progress-label"><span>Progress</span><span>68%</span></div>
+              <div class="progress-bar-bg"><div class="progress-fill" style="width:68%"></div></div>
+            </div>
+            <div class="course-footer">
+              <div class="modules-count"><span class="material-icons">library_books</span> 7/10 completed</div>
+              <button class="resume-btn">Resume →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="course-card">
+          <div class="card-thumb" style="background: linear-gradient(145deg, #4ece6b, #2f8a46);">
+            <span class="material-icons">psychology</span>
+          </div>
+          <div class="course-info">
+            <div class="course-title">
+              AI & Creative Thinking
+              <span class="badge-modules">6 mod</span>
+            </div>
+            <div class="course-desc">Generative AI, ethics, and future-ready problem solving.</div>
+            <div class="progress-section">
+              <div class="progress-label"><span>Progress</span><span>14%</span></div>
+              <div class="progress-bar-bg"><div class="progress-fill" style="width:14%"></div></div>
+            </div>
+            <div class="course-footer">
+              <div class="modules-count"><span class="material-icons">library_books</span> 1/6 completed</div>
+              <button class="resume-btn">Resume →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Upcoming Modules section (vibrant & color-rich) -->
+      <div class="modules-section">
+        <div class="modules-header">
+          <h3><span class="material-icons" style="color: var(--accent-orange);">schedule</span> Your upcoming modules</h3>
+          <a href="#" class="view-all">View full roadmap →</a>
+        </div>
+        <div class="modules-list">
+          <!-- module 1 -->
+          <div class="module-item">
+            <div class="module-icon"><span class="material-icons">palette</span></div>
+            <div class="module-details">
+              <div class="module-title">Design tokens & variables (UI/UX Design Systems)</div>
+              <div class="module-meta">
+                <span><span class="material-icons" style="font-size: 14px;">event</span> Due: Apr 24, 2026</span>
+                <span><span class="material-icons" style="font-size: 14px;">hourglass_empty</span> 45 min left</span>
+                <span class="module-status orange">In progress</span>
+              </div>
+            </div>
+          </div>
+          <!-- module 2 -->
+          <div class="module-item">
+            <div class="module-icon"><span class="material-icons">integration_instructions</span></div>
+            <div class="module-details">
+              <div class="module-title">React Hooks: useState & useEffect (Full-Stack JS)</div>
+              <div class="module-meta">
+                <span><span class="material-icons" style="font-size: 14px;">event</span> Due: Apr 26, 2026</span>
+                <span><span class="material-icons" style="font-size: 14px;">check_circle</span> 2/5 tasks done</span>
+                <span class="module-status">70% complete</span>
+              </div>
+            </div>
+          </div>
+          <!-- module 3 -->
+          <div class="module-item">
+            <div class="module-icon"><span class="material-icons">data_exploration</span></div>
+            <div class="module-details">
+              <div class="module-title">Pandas data wrangling & cleaning (Data Science Python)</div>
+              <div class="module-meta">
+                <span><span class="material-icons" style="font-size: 14px;">event</span> Due: Apr 28, 2026</span>
+                <span><span class="material-icons" style="font-size: 14px;">rocket_launch</span> Ready to start</span>
+                <span class="module-status green">Up next</span>
+              </div>
+            </div>
+          </div>
+          <!-- module 4 -->
+          <div class="module-item">
+            <div class="module-icon"><span class="material-icons">lightbulb</span></div>
+            <div class="module-details">
+              <div class="module-title">AI ethics & responsible creativity (AI & Creative Thinking)</div>
+              <div class="module-meta">
+                <span><span class="material-icons" style="font-size: 14px;">event</span> Due: May 2, 2026</span>
+                <span><span class="material-icons" style="font-size: 14px;">menu_book</span> 2 readings</span>
+                <span class="module-status">Not started</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER (original) -->
+    <footer class="dashboard-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h3>LearnSpace</h3>
+          <p>Where curiosity meets opportunity — learn beyond borders.</p>
+          <div style="margin-top: 12px;"><span class="material-icons" style="font-size: 16px;">email</span> hello@learnspace.com</div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col"><h4>Explore</h4><a href="#">Features</a><a href="#">Courses</a><a href="#">About us</a><a href="#">Careers</a></div>
+          <div class="footer-col"><h4>Resources</h4><a href="#">Help center</a><a href="#">Community</a><a href="#">Blog</a><a href="#">For instructors</a></div>
+          <div class="footer-col"><h4>Legal</h4><a href="#">Privacy policy</a><a href="#">Terms of use</a><a href="#">Cookie settings</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2025 LearnSpace — Empowering the new generation. All rights reserved.</div>
+    </footer>
+  </div>
+</div
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="../Css Files/sign-in.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script defer src="../Javascript Files/sign_in.js"></script>
+</head>
+<body>
+
+  
+<div class="sign-con">
+  <div class="sign-con-left">
+    <!-- Sign In Left Content -->
+    <div class="sign-in-left-con active" id="signInLeft">
+      <h1>Welcome back to LearnSpace</h1>
+      <p style="color: rgba(206, 206, 206, 0.85);">Your personal learning journey continues. Sign in to access your courses and track your growth.</p>
+      <div class="ratings-con">
+        <div class="rating-content">
+          <p>4.2k</p>
+          <p>Learners</p>
+        </div>
+        <div class="rating-content">
+          <p>130+</p>
+          <p>Courses</p>
+        </div>
+        <div class="rating-content">
+          <p>98%</p>
+          <p>Satisfaction</p>
+        </div>
+      </div>
+      <div class="blue-circle"></div>
+    </div>
+
+    <!-- Sign Up Left Content -->
+    <div class="sign-up-left-con" id="signUpLeft">
+      <h1>LearnSpace, the way to go!</h1>
+      <p style="color: rgba(255, 255, 255, 0.85);">Own your space, own your <span style="color: #4ece6b; font-weight: bold;">future</span>.</p>
+    </div>
+  </div>
+
+  <div class="sign-con-right">
+    <!-- SIGN IN FORM -->
+    <div class="sign-in-right-con active" id="signInRight">
+      <form id="signinForm">
+        <div class="form-data-section">
+          <div class="form-header">
+            <h3>Sign in</h3>
+            <p>Enter your credentials to continue learning</p>
+          </div>
+          <div class="form-data">
+            <label for="signin-email">Email Address</label>
+            <input type="email" class="input-field" id="signin-email" placeholder="hello@learnspace.com" required>
+          </div>
+          <div class="form-data">
+            <label for="signin-password">Password</label>
+            <input type="password" class="input-field" id="signin-password" placeholder="••••••••" required>
+          </div>
+          <div class="form-data1">
+            <div class="fcs-ls">
+              <input type="checkbox" id="rememberCheck">
+              <label for="rememberCheck">Remember me</label>
+            </div>
+            <div class="fcs-rs" id="forgotPwd">Forgot password?</div>
+          </div>
+          <button type="submit" class="sign-in" id="signInBtn">Sign In →</button>
+          <p style="text-align: center; margin: 5px 0;">Or</p>
+          <div class="register-button" id="switchToSignUpBtn">
+            <a href="#" class="register-btn">Click here to Register</a>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- SIGN UP FORM -->
+    <div class="sign-up-right-con" id="signUpRight">
+      <form id="signupForm">
+        <div class="form-data-section">
+          <div class="form-header">
+            <h3>Create account</h3>
+            <p>Start your limitless learning journey</p>
+          </div>
+          <div class="form-data">
+            <label for="fullname-up">Full name</label>
+            <input type="text" id="fullname-up" class="input-field" placeholder="Alex Johnson" required>
+          </div>
+          <div class="form-data">
+            <label for="email-up">Email address</label>
+            <input type="email" id="email-up" class="input-field" placeholder="alex@example.com" required>
+          </div>
+          <div class="form-data">
+            <label for="password-up">Password</label>
+            <input type="password" id="password-up" class="input-field" placeholder="Create a strong password" required>
+          </div>
+          <div class="form-data">
+            <label for="confirm-password-up">Confirm password</label>
+            <input type="password" id="confirm-password-up" class="input-field" placeholder="Confirm password" required>
+          </div>
+          <div class="form-data-check">
+            <input type="checkbox" id="termsCheck" required>
+            <label for="termsCheck">Agree to <a href="#">Terms</a> and <a href="#">Conditions</a></label>
+          </div>
+          <input type="submit" value="Sign Up →" id="submit-btn">
+          <div class="switch-signin-link">
+            <a href="#" id="backToSignInLink">← Back to Sign In</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
+
+<a href=""></a>
