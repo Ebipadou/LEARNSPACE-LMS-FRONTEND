@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Profile</title>
-  <link rel="stylesheet" href="../Css Files/learner_dashboard.css">
+  <link rel="stylesheet" href="../Css Files/profile.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <script defer src="../Javascript Files/learner_dashboard.js"></script>
+  <script defer src="../Javascript Files/profile.js"></script>
 </head>
 <body>
 
@@ -33,7 +33,7 @@
         <span>Assignments</span>
       </div>
       <div class="nav-item active" id="profile">
-        <span class="material-icons">settings</span>
+        <span class="material-icons">account_circle</span>
         <span>Profile</span>
       </div>
     </div>
@@ -166,7 +166,7 @@
             </div>
           </div>
           <div style="margin-top: 20px;">
-            <p style="font-size: 0.75rem; color: var(--primary-indigo);"><span class="material-icons" style="font-size: 0.9rem;">stars</span> Next badge: "JavaScript Master" – 2 more tasks</p>
+            <p style="font-size: 0.75rem; color: var(--primary-indigo);"><span class="material-icons" style="font-size: 0.9rem;">stars</span> Next badge: "JavaScript Master" &mdash; 2 more tasks</p>
           </div>
         </div>
 
@@ -218,10 +218,11 @@
             <p style="font-size: 0.85rem;">Change password or manage security settings</p>
           </div>
           <button id="changePwdBtn" style="background: transparent; border: 1px solid var(--warm-gray); padding: 8px 24px; border-radius: 40px; font-weight: 500; cursor: pointer;">Change password</button>
-          <button id="deleteAccountBtn" style="background: transparent; border: 1px solid #e05a5a; color: #e05a5a; padding: 8px 24px; border-radius: 40px; font-weight: 500; cursor: pointer;">Delete account</button>
+          <button id="logoutBtn" style="background: transparent; border: 1px solid #e05a5a; color: #e05a5a; padding: 8px 24px; border-radius: 40px; font-weight: 500; cursor: pointer;">Log Out account</button>
         </div>
       </div>
     </div>
+
 
 <footer class="dashboard-footer">
       <div class="footer-inner">
@@ -240,7 +241,21 @@
     </footer>
   </div>
 </div>
-  <script defer src="../Javascript Files/index.js"></script>
+
+<div class="modal">
+
+  <div class="modal-content-header">
+    <div class="close-circle">
+      <span class="material-icons">close</span>
+    </div>
+    <h3>Do you wish to log out?</h3>
+  </div>
+  <div class="modal-btns">
+    <button class="logout" id="lg-yes"> <span class="material-icons">check</span></button>
+    <button class="logout" id="lg-no"> <span class="material-icons">close</span></button>
+  </div>
+  
+</div>
 
 </body>
 </html>

@@ -9,38 +9,43 @@
   <script defer src="../Javascript Files/learner_dashboard.js"></script>
 </head>
 <body>
-
-  <a href="../HTML Files/learner_dashboard.html"></a>
-
   <div class="dashboard">
-  <!-- SIDEBAR (navigation) -->
-  <aside class="sidebar">
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
     <div class="sidebar-header">
       <h2>LearnSpace</h2>
     </div>
+
     <div class="nav-menu">
+
       <div class="nav-item active" id="dashboard">
         <span class="material-icons">dashboard</span>
         <span>Dashboard</span>
       </div>
+
       <div class="nav-item" id="courses">
         <span class="material-icons">menu_book</span>
         <span>Courses</span>
       </div>
+
       <div class="nav-item" id="progress">
         <span class="material-icons">trending_up</span>
         <span>Progress</span>
       </div>
+
       <div class="nav-item" id="assignments">
         <span class="material-icons">assignment</span>
         <span>Assignments</span>
       </div>
+      
       <div class="nav-item" id="profile">
-        <span class="material-icons">settings</span>
+        <span class="material-icons">account_circle</span>
         <span>Profile</span>
-        <!-- change Profile icon later -->
       </div>
+
     </div>
+
     <div class="sidebar-footer">
       <div class="curpo" style="cursor: pointer;">
         <div class="avatar-sm">JD</div>
@@ -50,7 +55,8 @@
         </div>
       </div>
     </div>
-  </aside>
+
+  </div>
 
   <!-- MAIN DASHBOARD CONTENT -->
   <main class="main-content">
@@ -74,7 +80,7 @@
         <div class="stat-card"><div class="stat-icon"><span class="material-icons">insights</span></div><div class="stat-value">68%</div><div class="stat-label">Overall Progress</div></div>
       </div>
 
-      <!-- Two column layout: left (courses + activity) / right (assignment & lesson) -->
+      <!-- Two column layout -->
       <div class="two-columns">
         <!-- LEFT COLUMN -->
         <div>
@@ -89,12 +95,12 @@
               <div class="course-meta"><span>📘 6 of 8 modules</span><span>⚡ Last active 2h ago</span></div>
             </div>
             <div class="course-item">
-              <div class="course-header"><span class="course-name">AI & Machine Learning – Introduction to AI</span><span class="course-percent">55%</span></div>
+              <div class="course-header"><span class="course-name">AI & Machine Learning &mdash; Introduction to AI</span><span class="course-percent">55%</span></div>
               <div class="progress-bar-bg"><div class="progress-fill" style="width: 55%;"></div></div>
               <div class="course-meta"><span>🔬 5 of 9 modules</span><span>📅 Last active yesterday</span></div>
             </div>
             <div class="course-item">
-              <div class="course-header"><span class="course-name">Javascript for beginners – Guide to Foundational Javascript knowledge</span><span class="course-percent">40%</span></div>
+              <div class="course-header"><span class="course-name">Javascript for beginners &mdash; Guide to Foundational Javascript knowledge</span><span class="course-percent">40%</span></div>
               <div class="progress-bar-bg"><div class="progress-fill" style="width: 40%;"></div></div>
               <div class="course-meta"><span>🤖 2 of 5 modules</span><span>⏳ Last active 3d ago</span></div>
             </div>
@@ -118,7 +124,7 @@
             <div class="activity-item">
               <div class="activity-icon"><span class="material-icons">assignment_late</span></div>
               <div class="activity-details">
-                <div class="activity-title">Assignment Due: Digital Watermarking – Phase 2</div>
+                <div class="activity-title">Assignment Due: Digital Watermarking &mdash; Phase 2</div>
                 <div class="activity-time"><span>CEN 501 - Due in 2 days</span><span class="status-badge pending">Pending</span></div>
               </div>
             </div>
@@ -174,7 +180,7 @@
             <div id="lessonFeedback" style="font-size: 0.7rem; margin-top: 10px; color: #3f6b3c; text-align: center;"></div>
           </div>
 
-          <!-- Extra quick progress breakdown (optional from Screen06) -->
+          <!-- Quick progress breakdown -->
           <div style="background: white; border-radius: 28px; padding: 20px; box-shadow: var(--card-shadow);">
             <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 14px;"><span class="material-icons" style="color: #4ece6b;">insights</span><span style="font-weight: 700;">Course-by-Course Breakdown</span></div>
             <div><small>SDA: 79% · AI&ML: 55% · Javascript: 40% · MERN: 82%</small></div>
@@ -204,7 +210,6 @@
   </main>
 </div>
 
-  <script defer src="../Javascript Files/learner_dashboard.js"></script>
 </body>
 </html>
 

@@ -4,53 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Progress</title>
-  <link rel="stylesheet" href="../Css Files/learner_dashboard.css">
+  <link rel="stylesheet" href="../Css Files/progress.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <script defer src="../Javascript Files/learner_dashboard.js"></script>
+  <script defer src="../Javascript Files/progress.js"></script>
 </head>
 <body>
 
  <div class="dashboard">
-  <!-- SIDEBAR (exactly as provided) -->
+  <!-- SIDEBAR -->
   <div class="sidebar">
+
     <div class="sidebar-header">
       <h2>LearnSpace</h2>
     </div>
+
     <div class="nav-menu">
+
       <div class="nav-item" id="dashboard">
         <span class="material-icons">dashboard</span>
         <span>Dashboard</span>
       </div>
+
       <div class="nav-item" id="courses">
         <span class="material-icons">menu_book</span>
         <span>Courses</span>
       </div>
+
       <div class="nav-item active" id="progress">
         <span class="material-icons">trending_up</span>
         <span>Progress</span>
       </div>
+
       <div class="nav-item" id="assignments">
         <span class="material-icons">assignment</span>
         <span>Assignments</span>
       </div>
+
       <div class="nav-item" id="profile">
-        <span class="material-icons">settings</span>
+        <span class="material-icons">account_circle</span>
         <span>Profile</span>
       </div>
+
     </div>
+
     <div class="sidebar-footer">
+
       <div class="curpo" style="cursor: pointer;">
+
         <div class="avatar-sm">JD</div>
+
         <div class="user-info">
           <b>John Doe</b>
           <p>John@learnspace.ng</p>
         </div>
+
       </div>
+      
     </div>
   </div>
 
-  <!-- MAIN CONTENT (Progress Dashboard) -->
+  <!-- MAIN CONTENT -->
   <div class="main-content">
+
     <div class="top-bar">
       <div class="greeting">
         <h3>Good morning, John! 👋</h3>
@@ -60,10 +75,12 @@
         <span class="material-icons" style="font-size: 18px;">calendar_today</span>
         <span>April 21, 2026</span>
       </div>
+
     </div>
 
     <div class="progress-wrapper">
-      <!-- STATS OVERVIEW CARDS -->
+
+      <!-- Stats Overview cards -->
       <div class="stats-row">
         <div class="stat-card">
           <div class="stat-icon"><span class="material-icons">school</span></div>
@@ -95,7 +112,7 @@
         </div>
       </div>
 
-      <!-- COURSE PROGRESS SECTION -->
+      <!-- Course Progress Section -->
       <div class="section-title">
         <span class="material-icons">insights</span>
         <span>Course completion journey</span>
@@ -171,7 +188,7 @@
         </div>
       </div>
 
-      <!-- TWO COLUMN: ACTIVITY + STREAK INSIGHTS -->
+      <!-- Two column section -->
       <div class="two-col-grid">
         <!-- Recent Activity -->
         <div class="insight-card">
@@ -189,7 +206,7 @@
           <div class="activity-item">
             <div class="activity-icon"><span class="material-icons">assignment_turned_in</span></div>
             <div class="activity-detail">
-              <p>Submitted JS quiz – 92% score</p>
+              <p>Submitted JS quiz &mdash; 92% score</p>
               <div class="activity-time">Apr 19, 2026</div>
             </div>
           </div>
@@ -209,7 +226,7 @@
           </div>
         </div>
 
-        <!-- Weekly streak & motivation -->
+        <!-- Weekly streak -->
         <div class="insight-card">
           <div class="insight-title">
             <span class="material-icons">local_fire_department</span>
@@ -226,7 +243,7 @@
           </div>
           <p style="margin-top: 20px; font-size: 0.85rem; background: var(--glass-bg); padding: 12px; border-radius: 20px; color: var(--primary-navy);">
             <span class="material-icons" style="font-size: 1rem; vertical-align: middle;">emoji_objects</span>  
-            You're on a 12‑day streak! Keep the momentum — 2 more days to beat your record.
+            You're on a 12&mdash;day streak! Keep the momentum — 2 more days to beat your record.
           </p>
           <div style="margin-top: 20px;">
             <div style="display: flex; justify-content: space-between; font-size: 0.75rem; margin-bottom: 8px;">
@@ -239,6 +256,7 @@
       </div>
 
 
+    <!-- Footer -->
     <footer class="dashboard-footer">
       <div class="footer-inner">
         <div class="footer-brand">
@@ -256,8 +274,6 @@
     </footer>
   </div>
 </div>
-
-  <script defer src="../Javascript Files/index.js"></script>
 
 </body>
 </html>

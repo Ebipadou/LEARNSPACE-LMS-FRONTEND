@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Assignments</title>
-  <link rel="stylesheet" href="../Css Files/learner_dashboard.css">
+  <link rel="stylesheet" href="../Css Files/assignment_submission.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <script defer src="../Javascript Files/learner_dashboard.js"></script>
+  <script defer src="../Javascript Files/assignment_submission.js"></script>
 </head>
 <body>
 
   <div class="dashboard">
-  <!-- SIDEBAR (exactly as original) -->
+  <!-- SIDEBAR -->
   <div class="sidebar">
     <div class="sidebar-header">
       <h2>LearnSpace</h2>
@@ -34,7 +34,7 @@
         <span>Assignments</span>
       </div>
       <div class="nav-item" id="profile">
-        <span class="material-icons">settings</span>
+        <span class="material-icons">account_circle</span>
         <span>Profile</span>
       </div>
     </div>
@@ -49,7 +49,7 @@
     </div>
   </div>
 
-  <!-- MAIN CONTENT (Assignments) -->
+  <!-- MAIN CONTENT -->
   <div class="main-content">
     <div class="top-bar">
       <div class="greeting">
@@ -96,7 +96,7 @@
       <!-- PENDING ASSIGNMENTS SECTION -->
       <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--primary-navy); margin-bottom: 20px;">⏳ Need your attention</h3>
       <div class="assign-grid">
-        <!-- Assignment 1 (Pending) -->
+        <!-- Assignment 1 -->
         <div class="assign-card pending">
           <div class="assign-inner">
             <div class="assign-info">
@@ -112,16 +112,16 @@
               </div>
             </div>
             <div class="assign-actions">
-              <button class="btn-submit" data-assignment="Design System Component Library">📎 Submit work</button>
+              <button class="btn-submit">📎 Submit work</button>
             </div>
           </div>
         </div>
-        <!-- Assignment 2 (Pending) -->
+        <!-- Assignment 2 -->
         <div class="assign-card pending">
           <div class="assign-inner">
             <div class="assign-info">
               <div class="assign-title">
-                React Hooks – Custom Hook Challenge
+                React Hooks &mdash; Custom Hook Challenge
                 <span class="course-tag">Full-Stack JavaScript</span>
               </div>
               <div class="assign-desc">Create a custom hook `useLocalStorage` and implement it in a small todo app. Provide GitHub repo.</div>
@@ -132,13 +132,13 @@
               </div>
             </div>
             <div class="assign-actions">
-              <button class="btn-submit" data-assignment="React Hooks – Custom Hook Challenge">📎 Submit work</button>
+              <button class="btn-submit" >📎 Submit work</button>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- SUBMITTED / PAST ASSIGNMENTS SECTION -->
+      <!-- PAST SUBMITTED ASSIGNMENTS SECTION -->
       <div class="submitted-section">
         <div class="section-subtitle">
           <span class="material-icons" style="color: var(--success-green);">history</span>
@@ -226,9 +226,6 @@
     </footer>
   </div>
 </div>
-
-
-  <script defer src="../Javascript Files/index.js"></script>
 
 </body>
 </html>

@@ -42,7 +42,7 @@
     const forgotPwd = document.getElementById('forgotPwd');
     if (forgotPwd) {
       forgotPwd.addEventListener('click', () => {
-        alert('✨ Demo: Password reset link would be sent to your email. (Feature coming soon)');
+        alert('Demo: Password reset link would be sent to your email. (Feature coming soon)');
       });
     }
     
@@ -89,7 +89,7 @@
           alert('Please agree to the Terms & Conditions.');
           return;
         }
-        alert(`✅ Account created for ${fullname}!\nWelcome to LearnSpace 🚀\nYou can now sign in.`);
+        alert(`✅ Account created for ${fullname}!\nWelcome to LearnSpace \nYou can now sign in.`);
         // After signup, switch to sign in view
         showSignIn();
         document.getElementById('fullname-up').value = '';
