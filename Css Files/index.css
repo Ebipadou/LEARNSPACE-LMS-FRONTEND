@@ -343,69 +343,47 @@ body {
   border-color: #4ece6b;
 }
 
-/* Footer */
+/* footer */
 .dashboard-footer {
   background: #0c142b;
   color: #b9ceff;
-  padding: 48px 40px 28px;
-  border-radius: 48px 48px 0 0;
-  margin-top: 60px;
+  padding: 32px 32px 24px;
+  border-radius: 32px 32px 0 0;
+  margin-top: 40px;
 }
-
 .footer-inner {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 40px;
+  gap: 30px;
 }
-
 .footer-brand h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   background: linear-gradient(120deg, #fff, #a2ffb9);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  margin-bottom: 8px;
 }
-
-.footer-brand p {
-  font-size: 0.85rem;
-  opacity: 0.8;
-}
-
 .footer-links {
   display: flex;
   gap: 48px;
   flex-wrap: wrap;
 }
-
 .footer-col a {
   display: block;
   color: #b9ceff;
   text-decoration: none;
   font-size: 0.85rem;
-  margin-bottom: 12px;
-  transition: color 0.2s;
+  margin-bottom: 8px;
 }
-
-.footer-col a:hover {
-  color: var(--success-green);
-}
-
-.footer-col h4 {
-  margin-bottom: 16px;
-  font-size: 1rem;
-  font-weight: 600;
-  color: white;
-}
-
+.footer-col a:hover { color: var(--success-green); }
 .footer-bottom {
   text-align: center;
-  margin-top: 48px;
-  padding-top: 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
   font-size: 0.75rem;
 }
 
